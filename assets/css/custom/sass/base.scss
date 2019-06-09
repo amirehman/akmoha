@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+
+$opensans: 'Roboto', sans-serif;
+$titil: 'Roboto', sans-serif;
+$raleway: 'Roboto', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$sans: 'Source Sans Pro', sans-serif;
+
+$themeFont: $roboto;
+$themeFont-header: $roboto;
+
+$black: #4c4c4c;
+$gray: #7f8c8d;
+
+$themeColor-1: #f39c12;
+$themeColor-2: #2980b9;
+
+$color1 : #1B2850;
+
+@function black($opacity) {
+    @return rgba(black,
+    $opacity);
+}
+
+@function white($opacity) {
+    @return rgba(white,
+    $opacity);
+}
+
+@function color($color,
+$opacity) {
+    @return rgba($color,
+    $opacity);
+}
+
+
+
+body {
+    font-family: $roboto;
+}
+
+
+.aniLink {
+    display: inline-block;
+    color: black(0.9);
+    padding-bottom: 2px;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.5px;
+        bottom: 0;
+        left: 0;
+        background-color: color($themeColor-1, 0.7);
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.2s ease-in-out 0s;
+        transition: all 0.2s ease-in-out 0s;
+    }
+    &:hover {
+        color: $themeColor-1;
+        &:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+    }
+}
+
+a {
+    transition: 0.3s;
+}
