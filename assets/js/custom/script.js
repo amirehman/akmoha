@@ -1,6 +1,7 @@
 jQuery(document).ready(function() {
     
-    
+    var width = $(window).width();     
+
     
 //    ======== smooth scolling =======
     
@@ -49,7 +50,6 @@ jQuery(document).ready(function() {
 // ======== On Window Resize ========
     
     $(window).on('resize', function () {
-        var width = $(window).width();     
         
         if (width >= 768  ) {
             
@@ -181,7 +181,7 @@ jQuery(document).ready(function() {
         $('div.project-overlay').addClass('close');
         $(this).children('div.project-overlay').removeClass('close');
         $(this).children('div.project-overlay').addClass('active');
-        $('.main-navbar').addClass('hidden');
+        $('.main-navbar, .mainnavbar-burgur').addClass('hidden');
         $('.main-navbar').removeClass('z-50');
         $('body').addClass('overflow-hidden');
     })
@@ -190,27 +190,25 @@ jQuery(document).ready(function() {
         $('.project-overlay').removeClass('active fullscreen');
         $('.project-overlay').addClass('close');
         $('body').removeClass('overflow-hidden');
-        closeProjectInfo();
-        var width = $(window).width();     
+        $('.mainnavbar-burgur').removeClass('hidden');
 
+        
         if (width >= 768  ) {
-            
+            closeProjectInfo();
             $('.main-navbar').removeClass('hidden');
             $('.main-navbar').addClass('z-50');
-            
         }
     })
     
      $('html').click(function() {
-        closeProjectInfo();
         $('body').removeClass('overflow-hidden');
         $('.project-overlay').addClass('close');
         $('.project-overlay').removeClass('active');
-         
-        var width = $(window).width();     
+        $('.mainnavbar-burgur').removeClass('hidden');           
+        
 
         if (width >= 768  ) {
-            
+            closeProjectInfo();
             $('.main-navbar').removeClass('hidden');
             $('.main-navbar').addClass('z-50');
             
