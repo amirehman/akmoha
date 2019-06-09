@@ -181,9 +181,13 @@ jQuery(document).ready(function() {
         $('div.project-overlay').addClass('close');
         $(this).children('div.project-overlay').removeClass('close');
         $(this).children('div.project-overlay').addClass('active');
-        $('.main-navbar, .mainnavbar-burgur').addClass('hidden');
+        $('.main-navbar').removeClass('md:block');
+        $('.mainnavbar-burgur').addClass('hidden');
         $('.main-navbar').removeClass('z-50');
         $('body').addClass('overflow-hidden');
+        if (width <= 768  ) {
+            $('div.project-overlay.active').addClass('fullscreen');
+        }
     })
     
     $('.closeprojectoverlay').on('click', function () {
@@ -195,7 +199,7 @@ jQuery(document).ready(function() {
         
         if (width >= 768  ) {
             closeProjectInfo();
-            $('.main-navbar').removeClass('hidden');
+            $('.main-navbar').addClass('md:block');
             $('.main-navbar').addClass('z-50');
         }
     })
@@ -209,7 +213,7 @@ jQuery(document).ready(function() {
 
         if (width >= 768  ) {
             closeProjectInfo();
-            $('.main-navbar').removeClass('hidden');
+            $('.main-navbar').addClass('md:block');
             $('.main-navbar').addClass('z-50');
             
         }
