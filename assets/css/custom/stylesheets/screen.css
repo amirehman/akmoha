@@ -279,7 +279,7 @@ a {
 .scroll-down .inner .dot {
   padding: 2px;
   padding-top: 10px;
-  left: 3px;
+  left: 7px;
   top: 10px;
   -webkit-animation: sdb10 2s infinite;
 }
@@ -841,5 +841,31 @@ a {
   /* line 673, ../sass/screen.scss */
   .overlay-actions-close-projectinfo {
     display: none;
+  }
+}
+
+/* line 679, ../sass/screen.scss */
+z-999 {
+  z-index: 999;
+}
+
+/* line 683, ../sass/screen.scss */
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border-top: 16px solid black;
+  border-bottom: 16px solid black;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

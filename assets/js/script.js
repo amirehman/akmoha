@@ -1,7 +1,14 @@
+jQuery(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");
+});
+
 jQuery(document).ready(function() {
     
     var width = $(window).width();     
-
+    
+    
+    
     
 //    ======== smooth scolling =======
     
@@ -179,7 +186,7 @@ jQuery(document).ready(function() {
     
     $('.project-box').on('click', function () {
         $('div.project-overlay').addClass('close');
-        $(this).children('div.project-overlay').removeClass('close');
+        $(this).children('div.project-overlay').removeClass('close opacity-0');
         $(this).children('div.project-overlay').addClass('active');
         $('.main-navbar').removeClass('md:block');
         $('.mainnavbar-burgur').addClass('hidden');
@@ -192,7 +199,7 @@ jQuery(document).ready(function() {
     
     $('.closeprojectoverlay').on('click', function () {
         $('.project-overlay').removeClass('active fullscreen');
-        $('.project-overlay').addClass('close');
+        $('.project-overlay').addClass('close opacity-0');
         $('body').removeClass('overflow-hidden');
         $('.mainnavbar-burgur').removeClass('hidden');
 
@@ -206,7 +213,7 @@ jQuery(document).ready(function() {
     
      $('html').click(function() {
         $('body').removeClass('overflow-hidden');
-        $('.project-overlay').addClass('close');
+        $('.project-overlay').addClass('close opacity-0');
         $('.project-overlay').removeClass('active');
         $('.mainnavbar-burgur').removeClass('hidden');           
         
