@@ -242,8 +242,8 @@ jQuery(document).ready(function() {
     function openProjectInfo () {
         $('.overlay-actions-close-projectinfo').addClass('hidden');
         $('.overlay-actions-open-projectinfo').removeClass('hidden');
-        $('.projectinfo').removeClass('right-0 inset-y-0 absolute');
-        $('.projectimages').removeClass('w-1/2');
+        $('.projectinfo').removeClass('right-0 inset-y-0 md:absolute');
+        $('.projectimages').removeClass('md:w-1/2');
         $('.projectimages').addClass('w-full');
         $('.projectimages > .inner').addClass('max-w-6xl mx-auto');
     }
@@ -251,8 +251,8 @@ jQuery(document).ready(function() {
     function closeProjectInfo () {
         $('.overlay-actions-close-projectinfo').removeClass('hidden');
         $('.overlay-actions-open-projectinfo').addClass('hidden');
-        $('.projectinfo').addClass('right-0 inset-y-0 absolute');
-        $('.projectimages').addClass('w-1/2');
+        $('.projectinfo').addClass('right-0 inset-y-0 md:absolute');
+        $('.projectimages').addClass('md:w-1/2');
         $('.projectimages').removeClass('w-full');
         $('.projectimages > .inner').removeClass('max-w-6xl mx-auto');
     }

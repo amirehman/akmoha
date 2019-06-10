@@ -522,7 +522,7 @@ a {
 
 /* line 377, ../sass/screen.scss */
 .certificates .certificate {
-  background: url(../../../images/certificate-bg.jpg) no-repeat center;
+  background: url(../images/certificate-bg.jpg) no-repeat center;
   background-size: cover;
   transition: 0.3s;
   border: 1px solid rgba(128, 128, 128, 0.5);
@@ -868,16 +868,4 @@ z-999 {
   100% {
     transform: rotate(360deg);
   }
-}
-/* line 698, ../sass/screen.scss */
-.download-resume {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-}
-/* line 701, ../sass/screen.scss */
-.download-resume:hover {
-  padding-left: 10px;
-  padding-right: 10px;
-  background: white;
-  color: black;
 }
