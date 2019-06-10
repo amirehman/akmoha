@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.png" type="image/png" sizes="128x128">
 
-    <!--Bootstrap-->
-    <link href="assets/css/lib/tailwind.min.css" rel="stylesheet">
 
     <!--  FontAwesome  -->
     <link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css">
@@ -1133,26 +1131,26 @@
                         <div class="relative pl-5 py-16">
                             
                             <div class="contact-form">
-                                <form action="contact.php">
+                                <form action="contact.php" method="post">
                                     
                                     <div class="form-element flex flex-wrap">
                                         <div class="w-1/2 p-2">
-                                            <input type="text" class="focus:outline-none form-input p-3 pb-1 w-full" placeholder="First Name">
+                                            <input type="text" name="first_name" class="focus:outline-none form-input p-3 pb-1 w-full" placeholder="First Name">
                                         </div>
                                         <div class="w-1/2 p-2">
-                                            <input type="text" class="focus:outline-none form-input p-3 pb-1 w-full" placeholder="Last Name">
+                                            <input type="text" name="last_name" class="focus:outline-none form-input p-3 pb-1 w-full" placeholder="Last Name">
                                         </div>
                                     </div>
                                     
                                     <div class="form-element flex flex-wrap">
                                         <div class="w-full p-2">
-                                            <input type="email" required class="focus:outline-none form-input p-3 pb-1 w-full" placeholder="Email Address *">
+                                            <input type="email" name="email" required class="focus:outline-none form-input p-3 pb-1 w-full" placeholder="Email Address *">
                                         </div>
                                     </div>
                                     
                                     <div class="form-element flex flex-wrap">
                                         <div class="w-full p-2">
-                                            <textarea rows="10" required class="focus:outline-none form-input p-3 pb-1 w-full" placeholder="message *"></textarea>
+                                            <textarea rows="10" name="message" required class="focus:outline-none form-input p-3 pb-1 w-full" placeholder="message *"></textarea>
                                         </div>
                                     </div>
                                     
