@@ -215,7 +215,7 @@
         width: 5px;
         height: 100%;
         background: black;
-        @include screenone-max {
+        @include screentwo-max {
             right: inherit;
             left: 75px;
         }
@@ -228,7 +228,7 @@
         width: 5px;
         height: 100%;
         background: white;
-        @include screenone-max {
+        @include screentwo-max {
             right: inherit;
             left: 80px;
             border-right: 1px solid black(0.1);
@@ -238,7 +238,7 @@
         right: -80px;
         top: -25px;
         z-index: 111;
-        @include screenone-max {
+        @include screentwo-max {
             right: inherit;
             border: 1px solid black(0.1);
         }
@@ -247,7 +247,7 @@
         right: -80px;
         bottom: -25px;
         z-index: 111;
-        @include screenone-max {
+        @include screentwo-max {
             right: inherit;
             border: 1px solid black(0.1);
         }
@@ -255,13 +255,13 @@
     @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
         .timeline-start-date {
             right: -100px;
-            @include screenone-max {
+            @include screentwo-max {
                 right: inherit;
             }
         }
         .timeline-current-date {
             right: -100px;
-            @include screenone-max {
+            @include screentwo-max {
                 right: inherit;
             }
         }
@@ -269,13 +269,13 @@
     @-moz-document url-prefix() {
         .timeline-start-date {
             right: -80px;
-            @include screenone-max {
+            @include screentwo-max {
                 right: inherit;
             }
         }
         .timeline-current-date {
             right: -80px;
-            @include screenone-max {
+            @include screentwo-max {
                 right: inherit;
             }
         }
@@ -302,13 +302,13 @@
 
 
 .timeline-row {
-    @include screenone-max {
+    @include screentwo-max {
         padding-top: 50px;
         padding-bottom: 50px;
     }
     .timeline-time h3 {
         margin-top: -5px;
-        @include screenone-max {
+        @include screentwo-max {
             position: absolute;
             top: -15px;
             left: 105px;
@@ -328,7 +328,7 @@
             border: 5px solid white;
             border-radius: 50%;
             z-index: 111;
-            @include screenone-max {
+            @include screentwo-max {
                 right: inherit;
                 left: 70px;
                 background: white;
@@ -344,7 +344,7 @@
             height: 1px;
             background: lightgray;
             z-index: 111;
-            @include screenone-max {
+            @include screentwo-max {
                 right: inherit;
                 left: 70px;
                 height: 20px;
@@ -358,7 +358,7 @@
             top: -5px;
             left: 125%;
             border-radius: 10px;
-            @include screenone-max {
+            @include screentwo-max {
                 left: 100px;
                 top: 50px;
                 color: black;
@@ -368,18 +368,18 @@
     }
     &.education {
         .right {
-            @include screenone-max {
+            @include screentwo-max {
                 color: white;
             }
         }
         .timeline-left {
             &:before {
-                @include screenone-max {
+                @include screentwo-max {
                     border-color: white(0.3);
                 }
             }
             &:after {
-                @include screenone-max {
+                @include screentwo-max {
                     left: 67px;
                 }
             }

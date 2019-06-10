@@ -336,7 +336,7 @@ a {
   height: 100%;
   background: black;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   /* line 210, ../sass/screen.scss */
   .experience-timeline-left:before {
     right: inherit;
@@ -353,7 +353,7 @@ a {
   height: 100%;
   background: white;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   /* line 223, ../sass/screen.scss */
   .experience-timeline-left:after {
     right: inherit;
@@ -367,7 +367,7 @@ a {
   top: -25px;
   z-index: 111;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   /* line 237, ../sass/screen.scss */
   .experience-timeline-left .timeline-current-date {
     right: inherit;
@@ -380,7 +380,7 @@ a {
   bottom: -25px;
   z-index: 111;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   /* line 246, ../sass/screen.scss */
   .experience-timeline-left .timeline-start-date {
     right: inherit;
@@ -393,7 +393,7 @@ a {
     right: -100px;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (max-width: 720px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (max-width: 960px) {
   /* line 256, ../sass/screen.scss */
   .experience-timeline-left .timeline-start-date {
     right: inherit;
@@ -405,7 +405,7 @@ a {
     right: -100px;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (max-width: 720px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (max-width: 960px) {
   /* line 262, ../sass/screen.scss */
   .experience-timeline-left .timeline-current-date {
     right: inherit;
@@ -417,7 +417,7 @@ a {
   .experience-timeline-left .timeline-start-date {
     right: -80px;
   }
-  @media only screen and (max-width: 720px) {
+  @media only screen and (max-width: 960px) {
     /* line 270, ../sass/screen.scss */
     .experience-timeline-left .timeline-start-date {
       right: inherit;
@@ -427,7 +427,7 @@ a {
   .experience-timeline-left .timeline-current-date {
     right: -80px;
   }
-  @media only screen and (max-width: 720px) {
+  @media only screen and (max-width: 960px) {
     /* line 276, ../sass/screen.scss */
     .experience-timeline-left .timeline-current-date {
       right: inherit;
@@ -455,7 +455,7 @@ a {
   background: black;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   /* line 304, ../sass/screen.scss */
   .timeline-row {
     padding-top: 50px;
@@ -466,7 +466,7 @@ a {
 .timeline-row .timeline-time h3 {
   margin-top: -5px;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   /* line 309, ../sass/screen.scss */
   .timeline-row .timeline-time h3 {
     position: absolute;
@@ -488,7 +488,7 @@ a {
   border-radius: 50%;
   z-index: 111;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   /* line 320, ../sass/screen.scss */
   .timeline-row .timeline-left:after {
     right: inherit;
@@ -508,7 +508,7 @@ a {
   background: lightgray;
   z-index: 111;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   /* line 338, ../sass/screen.scss */
   .timeline-row .timeline-left:before {
     right: inherit;
@@ -526,7 +526,7 @@ a {
   left: 125%;
   border-radius: 10px;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   /* line 357, ../sass/screen.scss */
   .timeline-row .timeline-left .right {
     left: 100px;
@@ -534,19 +534,19 @@ a {
     color: black;
   }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   /* line 370, ../sass/screen.scss */
   .timeline-row.education .right {
     color: white;
   }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   /* line 376, ../sass/screen.scss */
   .timeline-row.education .timeline-left:before {
     border-color: rgba(255, 255, 255, 0.3);
   }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   /* line 381, ../sass/screen.scss */
   .timeline-row.education .timeline-left:after {
     left: 67px;
