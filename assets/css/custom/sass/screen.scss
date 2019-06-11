@@ -195,6 +195,7 @@
 .circle {
     position: relative;
 	vertical-align: top;
+    transition: 0.2s;
     canvas {
         max-width: 100%;
         max-height: 100%;
