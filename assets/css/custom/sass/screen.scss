@@ -255,13 +255,13 @@
     }
     @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
         .timeline-start-date {
-            right: -100px;
+            right: -80px;
             @include screentwo-max {
                 right: inherit;
             }
         }
         .timeline-current-date {
-            right: -100px;
+            right: -80px;
             @include screentwo-max {
                 right: inherit;
             }
@@ -375,11 +375,13 @@
         }
         .timeline-left {
             &:before {
+                right: -110px;
                 @include screentwo-max {
                     border-color: white(0.3);
                 }
             }
             &:after {
+                right: -30px;
                 @include screentwo-max {
                     left: 67px;
                 }
